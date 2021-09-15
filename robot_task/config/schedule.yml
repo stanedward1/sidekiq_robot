@@ -1,0 +1,20 @@
+one_message:
+  cron: "55 8 */1 * * Asia/Shanghai"
+  class: "Send01Worker"
+  queue: message
+two_message:
+  cron: "25 12 */1 * * Asia/Shanghai"
+  class: "Send02Worker"
+  queue: message
+three_message:
+  cron: "40 13 */1 * * Asia/Shanghai"
+  class: "Send03Worker"
+  queue: message
+four_message:
+  cron: "58 15 */1 * * Asia/Shanghai"
+  class: "Send04Worker"
+  queue: message
+hitokoto_message:
+  cron: "*/15 * * * * Asia/Shanghai"
+  class: "HitokotoWorker"
+  queue: message
